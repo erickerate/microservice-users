@@ -18,7 +18,7 @@ namespace Data.Test
         /// </summary>
         public DatabaseProvider()
         {
-            string connectionString = $@"Initial Catalog={this.dataBaseName}; Data Source=sqldata; Persist Security Info=True;User ID=SA;Password= Numsey#2022; TrustServerCertificate=True;";
+            string connectionString = $@"Initial Catalog={this.dataBaseName}; Data Source=localhost,1450; Persist Security Info=True;User ID=SA;Password= Numsey#2022; TrustServerCertificate=True;";
             ServiceCollection serviceCollection = new ServiceCollection();
             serviceCollection.AddDbContext<JuntoSegurosContext>(
                 o => o.UseSqlServer(connectionString),
