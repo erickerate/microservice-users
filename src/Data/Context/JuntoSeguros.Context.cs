@@ -23,7 +23,7 @@ public partial class JuntoSegurosContext : DbContext
 
     #endregion
 
-    #region Members 'Collections' :: User
+    #region Members 'Collections' :: Users
 
     /// <summary>
     /// Usuários
