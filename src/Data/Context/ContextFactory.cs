@@ -21,7 +21,7 @@ public class ContextFactory : IDesignTimeDbContextFactory<JuntoSegurosContext>
     {
         try
         {
-            string connectionString = @"Initial Catalog=JuntoSeguros; Data Source=localhost,1450; Persist Security Info=True;User ID=SA;Password= Numsey#2022; TrustServerCertificate=True;";
+            string connectionString = @"Initial Catalog=JuntoSeguros; Data Source=sqldata; Persist Security Info=True;User ID=SA;Password= Numsey#2022; TrustServerCertificate=True;";
             DbContextOptionsBuilder<JuntoSegurosContext> optionsBuilder = new DbContextOptionsBuilder<JuntoSegurosContext>();
             optionsBuilder.UseSqlServer(connectionString);
             return new JuntoSegurosContext(optionsBuilder.Options);
