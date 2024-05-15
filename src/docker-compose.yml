@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Application/Dockerfile
     ports:
-      - "8081:80"
+      - "5000:8080"
     depends_on:
       - sqldata
 
