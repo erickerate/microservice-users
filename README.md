@@ -15,4 +15,7 @@ As etapas a serem executadas são:
    - Prometheus `localhost:5500`
    - Grafana `localhost:3000`
 
+## Autenticação
+Para efetuar a autenticação, obtenha o token através do endpoint `UserAuth`. Pode-se obter este token através de um usuário cadastrado ou usuário administrador `admin@juntoseguros.com.br`, previamente cadastrado. Uma vez obtido o token, deve-se autorizar utilizando a sintaxe "Bearer {token}".
+
 ## Obrigado!
