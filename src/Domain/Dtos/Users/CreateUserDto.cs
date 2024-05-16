@@ -27,6 +27,12 @@ namespace Domain.Dtos.Users
         /// <summary>
         /// Email
         /// </summary>
+        /// <summary>
+        /// Endereço de email
+        /// </summary>
+        [Required(ErrorMessage = "E-mail é um campo obrigatório")]
+        [EmailAddress(ErrorMessage = "E-mail em formato inválido")]
+        [StringLength(100, ErrorMessage = "E-mail deve conter no máximo {1} caracteres")] 
         public required string EmailAddress { get; set; }
 
         /// <summary>
