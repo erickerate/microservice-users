@@ -11,6 +11,30 @@ services:
     depends_on:
       - sqldata
 
+  prometheus:
+    build:
+      context: ./prometheus
+      dockerfile: Dockerfile
+      args:
+        version: 1
+    image: prometheus-local
+    restart: always
+    ports: 
+      - 5500:9090
+    volumes: 
+      - './prometheus/data:/data'
+
+  grafana:
+    build:
+      context: ./grafana
+      dockerfile: Dockerfile
+      args:
+        version: 1
+    image: grafana-local
+    restart: always
+    ports:
+      - 3000:3000
+
   sqldata:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:

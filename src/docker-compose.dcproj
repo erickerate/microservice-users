@@ -10,10 +10,24 @@
     <DockerServiceName>application</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="testeggg\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
+    <None Include="grafana\config\grafana.ini" />
+    <None Include="grafana\dashboards\dashboard-webmetric.json" />
+    <None Include="grafana\Dockerfile" />
+    <None Include="grafana\provisioning\dashboards\dashboard.yml" />
+    <None Include="grafana\provisioning\datasources\datasource.yml" />
+    <None Include="grafana\provisioning\notifiers\alertNotificationChannel.yml" />
+    <None Include="prometheus\Dockerfile" />
+    <None Include="prometheus\prometheus.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="prometheus\data\" />
   </ItemGroup>
 </Project>

@@ -3,6 +3,7 @@ using CrossCutting.Mappings;
 using CrossCutting.Migrations;
 using Domain.Interfaces;
 using Domain.Security;
+using JuntoSeguros.Setup;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
@@ -131,6 +132,8 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teste Desenvolvedor .Net");
     c.RoutePrefix = string.Empty;
 });
+
+app.UsePrometheusConfiguration();
 
 app.UseAuthorization();
 
