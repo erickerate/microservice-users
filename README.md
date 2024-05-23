@@ -22,4 +22,16 @@ As etapas a serem executadas são:
 ## Autenticação
 Para efetuar a autenticação, obtenha o token através do endpoint `UserAuth`. Pode-se obter este token através de um usuário cadastrado ou usuário administrador `admin@juntoseguros.com.br`, previamente cadastrado. Uma vez obtido o token, deve-se autorizar utilizando a sintaxe "Bearer {token}".
 
+## Observabilidade
+
+Prometheus
+![Prometheus](https://github.com/erickerate/microservice-users/blob/main/assets/Prometheus.png)
+
+Grafana
+![Grafana](https://github.com/erickerate/microservice-users/blob/main/assets/Grafana.png)
+
+Login Grafana:
+`admin`
+`@admin`
+
 ## Obrigado!
