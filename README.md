@@ -16,7 +16,7 @@ As etapas a serem executadas são:
 3. Correr `docker compose up`
 4. Abra seu navegador em:
    - Microserviço `localhost:5000`
-   - Prometheus `localhost:5500`
+   - Prometheus `localhost:9090`
    - Grafana `localhost:3000`
 
 ## Autenticação
