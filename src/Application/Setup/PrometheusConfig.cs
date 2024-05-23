@@ -26,7 +26,7 @@ namespace JuntoSeguros.Setup
             });
 
             // Use the prometheus middleware
-            app.UseMetricServer();
+            app.UseMetricServer(settings => settings.EnableOpenMetrics = false);
             app.UseHttpMetrics();
 
             return app;

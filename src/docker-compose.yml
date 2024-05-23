@@ -20,7 +20,7 @@ services:
     image: prometheus-local
     restart: always
     ports: 
-      - 5500:9090
+      - 9090:9090
     volumes: 
       - './prometheus/data:/data'
 
