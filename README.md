@@ -1,5 +1,5 @@
 # microservice-users
-Projeto desenvolvido como pré-requisito do processo de recrutamento e seleção para Desenvolvedor .Net - Junto Seguros. O projeto em questão implementa um microserviço para o gerenciamento de usuários. Para persistir e recuperar dados, utilizou-se o banco de dados Microsoft SQL Server juntamente ao Entity Framework – adotando a técnica de modelagem Code First. Empregou-se também o design de software orientado à domínio (DDD) juntamente à técnicas de Clean Architecture/Code a fim de estabelecer limites arquiteturais bem definidos. 
+O projeto em questão implementa um microserviço para o gerenciamento de usuários. Para persistir e recuperar dados, utilizou-se o banco de dados Microsoft SQL Server juntamente ao Entity Framework – adotando a técnica de modelagem Code First. Empregou-se também o design de software orientado à domínio (DDD) juntamente à técnicas de Clean Architecture/Code a fim de estabelecer limites arquiteturais bem definidos. 
 
 ## Arquitetura
 
